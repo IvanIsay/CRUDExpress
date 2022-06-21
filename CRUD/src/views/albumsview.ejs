@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include('partials/head') %>
+  </head>
+
+  <body>
+      <%- include('partials/header') %>
+
+    <h1> Albums</h1>
+
+    <h2> <%= data %> </h2>
+
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-7">
+
+    </div>
+
+    <div class="col-md-5">
+
+
+      <div class="card">
+        <div class="card-body">
+          <form  action="" method="post">
+
+            <div class="mb-3">
+              <input type="text" name="txtAlbum" class="form-control" placeholder="Escribe Album" value="">
+            </div>
+
+            <div class="mb-3">
+              <input type="text" name="txtArtista" class="form-control" placeholder="Escribe Artista" value="">
+            </div>
+
+            <div class="mb-3">
+              <input type="text" name="txtAnio"  class="form-control" placeholder="Escribe Año" value="">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar Album</button>
+
+          </form>    
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+    <%- include('partials/footer') %>
+  </body>
+
+</html>
