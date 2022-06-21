@@ -2,7 +2,6 @@
 const controller= {};
 
 controller.list = (req,res) => {
-
   req.getConnection((err,conn) =>{
     conn.query('Select * from tbalbums', (err,albums) => {
       if(err){
@@ -14,6 +13,14 @@ controller.list = (req,res) => {
     });
   });
 };
+
+
+controller.save = (req,res) => {
+  console.log(req.body);
+  res.send('works')
+
+  };
+
 
 
 

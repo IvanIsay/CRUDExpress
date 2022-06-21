@@ -6,5 +6,7 @@ const albumsController = require('../controllers/albumsControler');
 
 router.get('/', albumsController.list);
 
+router.post('/add', albumsController.save);
+
 
 module.exports= router;

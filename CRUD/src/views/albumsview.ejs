@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <%- include('partials/head') %>
   </head>
@@ -25,7 +25,8 @@
 
       <div class="card">
         <div class="card-body">
-          <form  action="" method="post">
+
+          <form  action="/add" method="POST">
 
             <div class="mb-3">
               <input type="text" name="txtAlbum" class="form-control" placeholder="Escribe Album" value="">
@@ -41,7 +42,7 @@
 
             <button type="submit" class="btn btn-primary">Guardar Album</button>
 
-          </form>    
+          </form>
 
         </div>
       </div>

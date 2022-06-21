@@ -24,10 +24,13 @@ server.use(myConnection(mysql,{
   port:'3306',
   database:'dbnode',
 },'single'));
+server.use(express.urlencoded({extended:false}));
+
 
 
 //Routes
 server.get('/',albumsRoutes);
+server.post('/add',albumsRoutes);
 
 
 
