@@ -16,8 +16,16 @@ controller.list = (req,res) => {
 
 
 controller.save = (req,res) => {
-  console.log(req.body);
-  res.send('works')
+
+  const datos= req.body;
+  console.log(datos);
+  req.getConnection((err,conn) =>{
+    conn.query('INSERT INTO tbalbums set ?',[datos],(err,album) => {
+      console.log(album);
+      res.redirect('/');
+      //58:16
+    });
+  });
 
   };
 
